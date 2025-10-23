@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config();
-import allowCors from '../_cors';
+import allowCors from '../_cors.js';
 
 async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
